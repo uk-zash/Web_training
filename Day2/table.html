@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        height: 100%;
+    }
+
+    div{
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        place-items: center;
+    }
+
+
+    table {
+        width: 50%;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    table,th , td{
+        border: 1px solid  black;
+        border-collapse: collapse;
+        /* border-spacing: 23px; */
+       
+       
+    }
+
+    th,
+    td {
+        /* border-bottom: 1px solid black; */
+        padding: 1rem;
+    }
+
+
+
+
+    tr:nth-child(odd) {
+        background-color: aqua;
+    }
+
+    tr:hover {
+
+        background-color: rgb(100, 216, 100);
+
+    }
+
+    th {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll NO</th>
+            <th>Branch</th>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>3453</td>
+            <td>AIML</td>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>3453</td>
+            <td>AIML</td>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>3453</td>
+            <td>AIML</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+
+</html>
