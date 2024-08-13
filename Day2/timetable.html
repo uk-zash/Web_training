@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .lunch {
+            background-color: #ffeb3b;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Class Timetable</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>9:00 AM - 9:30 AM</th>
+            <th>9:30 AM - 10:00 AM</th>
+            <th>10:00 AM - 10:30 AM</th>
+            <th>10:30 AM - 11:00 AM</th>
+            <th>11:00 AM - 11:30 AM</th>
+            <th>11:30 AM - 12:00 PM</th>
+            <th>12:00 PM - 12:30 PM</th>
+            <th>12:30 PM - 1:00 PM</th>
+            <th>1:00 PM - 2:00 PM</th>
+            <th>2:00 PM - 2:30 PM</th>
+            <th>2:30 PM - 3:00 PM</th>
+            <th>3:00 PM - 3:30 PM</th>
+            <th>3:30 PM - 4:00 PM</th>
+            <th>4:00 PM - 4:30 PM</th>
+            <th>4:30 PM - 5:00 PM</th>
+            <th>5:00 PM - 5:30 PM</th>
+            <th>5:30 PM - 6:00 PM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Monday</th>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+            <td class="lunch" colspan="2" rowspan="5">Lunch Break</td>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+            <!-- Lunch handled by rowspan -->
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+            <!-- Lunch handled by rowspan -->
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+            <!-- Lunch handled by rowspan -->
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+            <!-- Lunch handled by rowspan -->
+            <td>SE</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+            <td>PE</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

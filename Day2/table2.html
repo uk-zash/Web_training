@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        display: flex;
+        gap: 1rem;
+    }
+    table , td , th{
+        border: 1px solid black;
+        border-collapse: collapse;
+
+    }
+
+    th , td{
+        padding: 23px;
+    }
+</style>
+
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Roll No</th>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>Umar</td>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th>Roll No</th>
+        </tr>
+        <!-- <tr>
+            <td>Khan</td>
+            <td>234</td>
+        </tr> -->
+        <tr>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="4">Name</th>
+        </tr>
+        <!-- <tr>
+            <td>Khan</td>
+            <td>234</td>
+        </tr> -->
+        <tr>
+            <td colspan="2" rowspan="2">Khan</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>Khan</td>
+            <td>234</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
