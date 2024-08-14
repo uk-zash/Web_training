@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Link</title>
+    <style>
+        a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: aqua;
+            background-color: transparent;
+        }
+
+        a:hover{
+            color: red;
+            background-color: aqua;
+        }
+
+        #scrollTopButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: lightblue;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="timetable.html" target="_blank" id="c1">Click here to see the table</a>
+
+    <br>
+    <a href="table2.html">Click here</a>
+    <br>
+
+    <a href="mailto:umarkhan@gmail.com">Send Mail</a>
+    <br>
+
+    <button onclick="document.location='Image.html'">Click to see Image</button>
+    <br>
+
+    <a href="tabl34.html"><img src="../Image/4.jpeg" alt="Image"></a>
+    <br>
+
+    <a href="#c4">Click to go level 4</a>
+
+
+    <h2>Level1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <h2 id="c4">Level 4</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+
+    <button id="scrollTopButton" onclick="scrollToTop()">Top</button>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const scrollTopButton = document.getElementById("scrollTopButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
