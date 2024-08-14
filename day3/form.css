@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 20px;
+    background-color: aqua;
+    width: 97%;
+    border: 1px solid black;
+    margin: 0 auto; 
+}
+.label{
+    padding-top: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[name="username"], input[name="password"] ,input[name="date"]{
+    text-align: left;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 8px 12px;
+    background-color: brown;
+    border-radius: 5px;
+    color: white; /* Ensures text is visible on brown background */
+    border: none; /* Removes default border */
+    min-width: 120px; /* Ensures button is sufficiently large */
+}
+
+input[name="username"]:focus, input[name="password"]:focus {
+    border: 2px solid blue;
+    background-color: aquamarine;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: aquamarine;
+    color: brown; /* Changes text color on hover for contrast */
+}
