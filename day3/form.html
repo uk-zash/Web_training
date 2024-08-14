@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" fieldset>
+        <label for="fname">First Name</label> <br>
+        <input type="text" name="fname" id="name"> <br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br>
+
+        <label for="phone">Enter Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="5323-2342-32" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"><br>
+
+
+        <label for="car">Select Your Bugatti</label>
+        <select name="car" id="car" size="2" multiple>
+            <option value="Bugatti Veyron">Bugatti Veyron</option>
+            <option value="Bugatti Chiron">Bugatti Chiron</option>
+            <option value="Bugatti Chiron Pursport">Bugatti Chiron Pur Sport</option>
+        </select><br>
+
+        <label for="sub1">CN</label>
+        <input type="checkbox" id="sub1" name="sub1" value="CN"><br>
+
+        <label for="sub1">CN</label>
+        <input type="checkbox" id="sub1" name="sub1" value="CN"><br>
+        <label for="sub1">CN</label>
+        <input type="checkbox" id="sub1" name="sub1" value="CN"><br>
+
+        <label for="radio"> Male </label>
+        <input type="radio" id="radio" name="radio" value="option1"><br>
+        <label for="radio"> Female </label>
+        <input type="radio" id="radio" name="radio" value="option1"><br>
+
+        <label for="text">TextArea</label><br>
+        <textarea name="text" id="text" cols="12" rows="12" autofocus></textarea> <br>
+        
+        <button type="submit">Submit</button>
+
+
+        <form action="">
+            <fieldset>
+                <legend>Login Form</legend>
+                <label for="username">Name</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Submit" name="login" id="login">
+            </fieldset>
+        </form>
+
+        
+
+
+
+    </form>
+    
+</body>
+</html>
