@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+        }
+
+        body {
+            background: url("../Image/3.jpeg") no-repeat center center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: greenyellow;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 3rem;
+            font-size: 1rem;
+            padding-left: 1rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            /* padding: rem; */
+        }
+
+        .left_col {
+            flex: 2; 
+            /* padding: 1rem; */
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            height: 100vh;
+        }
+
+        .left_col .card {
+            padding: 1rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            /* border-radius: 8px; */
+        }
+
+        .left_col h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .left_col h5 {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .left_col p {
+            line-height: 1.6;
+        }
+
+    
+        .right_col {
+            flex: 1;
+            /* padding: 1rem; */
+            height: 100vh;
+        }
+
+        .right_col .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            /* border-radius: 8px; */
+            padding: 1rem;
+            /* margin-bottom: 1rem; */
+        }
+
+        .right_col .box h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .right_col .box p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left_col">
+            <div class="card">
+                <h3>Title</h3>
+                <h5>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam quas accusamus qui! Distinctio, vel? Accusamus eaque adipisci velit? Vel temporibus corrupti doloremque.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi id rem expedita inventore voluptatum! Nostrum tenetur, odio pariatur quas labore incidunt voluptatem asperiores soluta sunt commodi neque provident distinctio id, perspiciatis eaque sequi ut laboriosam similique voluptatibus? Distinctio mollitia debitis cupiditate.</p>
+            </div>
+        </div>
+
+        <div class="right_col">
+            <div class="box">
+                <h4>Box 1</h4>
+                <p>Content for the first box in the right column. This section can include any type of content you want to display, such as additional information or widgets.</p>
+            </div>
+            <div class="box">
+                <h4>Box 2</h4>
+                <p>Content for the second box in the right column. This could be used for another set of information or a different type of widget.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
