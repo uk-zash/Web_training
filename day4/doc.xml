@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<documents>
+    <document>
+        <title> Introduction to XML</title>
+        <Author>Jhon Doe</Author>
+        <content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eaque nulla aut recusandae esse minus temporibus assumenda dolorum reiciendis et. Sunt, dolor repudiandae!
+        </content>
+    </document>
+    <document>
+        <title>
+            HTML vs XML
+        </title>
+        <Author>Jane Foster</Author>
+        <content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptas animi sequi, est a fugit earum, repellat, molestias neque ut laborum ipsa quas.</content>
+    </document>
+    
+</documents>

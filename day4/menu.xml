@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menus>
+    <menu>
+        <item>Salad</item>
+        <cook>Jane Foster</cook>
+    </menu>
+    <menu>
+        <item>Crab</item>
+        <cook>Harman</cook>
+    </menu>
+    <menu>
+        <item>Cheese Burger</item>
+        <cook>Senan</cook>
+    </menu>
+
+</Menus>

@@ -1,0 +1,22 @@
+<!DOCTYPE library [
+    <!ELEMENT library (book+)>
+    <!ELEMENT book (title,author,year)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ATTLIST book isbn CDATA #REQUIRED> 
+ 
+]>
+
+<library>
+    <book isbn="234-4329753">
+        <title>Harry Potter</title>
+        <author>J.K. Rowling</author>
+        <year>2000</year>
+    </book>
+    <book isbn="42349532">
+        <title>Lord of the Rings</title>
+        <author>JK Someone</author>
+        <year>1999</year>
+    </book>
+</library>

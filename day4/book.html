@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        const root = document.getElementById('root');
+
+        let xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.open("GET", "doc.xml", false);
+        xmlhttp.send();
+
+        const xmlDoc = xmlhttp.responseXML;
+
+        if (xmlDoc) {
+            let htmlContent = '';
+            const documents = xmlDoc.getElementsByTagName('document');
+
+            for (let i = 0; i < documents.length; i++) {
+                const title = documents[i].getElementsByTagName('title')[0].textContent.trim();
+                const author = documents[i].getElementsByTagName('Author')[0].textContent.trim();
+                const content = documents[i].getElementsByTagName('content')[0].textContent.trim();
+
+                htmlContent += `<div>
+                                    <h3>${title}</h3>
+                                    <p><strong>Author:</strong> ${author}</p>
+                                    <p>${content}</p>
+                                </div>`;
+            }
+            root.innerHTML = htmlContent;
+        } else {
+            root.innerHTML = '<p>Failed to load XML data.</p>';
+        }
+    </script>
+</body>
+</html>
