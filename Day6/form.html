@@ -44,11 +44,9 @@
             border: 1px solid #ccc; 
             border-radius: 4px;
             width: 100%; 
-            /* border: none; */
             outline: none;
             box-sizing: border-box;
         }
-
 
         input[type="submit"] {
             padding: 10px;
@@ -66,10 +64,8 @@
         }
         input[type="text"]:hover, 
         input[type="email"]:hover, 
-        input[type="password"]:hover{
-
+        input[type="password"]:hover {
             border: 1px solid blue;
-
         }
     </style>
 </head>
@@ -88,9 +84,29 @@
             
             <label for="cnfm-password">Confirm Password</label>
             <input type="password" name="cnfm-password" id="cnfm-password" required placeholder="Enter Password again">
+
+            <!-- Checkbox to toggle password visibility -->
+            <label>
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </label>
             
             <input type="submit" value="Register">
         </form>
     </div>
+
+    <script>
+        function togglePassword() {
+            var password = document.getElementById("password");
+            var confirmPassword = document.getElementById("cnfm-password");
+            
+            if (password.type === "password") {
+                password.type = "text";
+                confirmPassword.type = "text";
+            } else {
+                password.type = "password";
+                confirmPassword.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>

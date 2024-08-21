@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+
+    <title>JS</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+        let FirstName = "Md";
+        let LastName = "Umar";
+
+
+        document.write("Using let to declare and intitalize variable: <br>");
+        document.write("FirstName: "+ FirstName + "<br>");
+        document.write("LastName: "+ LastName + "<br>");
+
+        var age = 21;
+        document.write("Age: "+ age + "<br>");
+
+        age = 22;
+        document.write("Age now: "+age + "<br>");
+        let city;
+        document.write("Hoisting city: " + city);
+
+        city = "Azamgarh";
+        
+
+        function greet(){
+            var message = "Hello";
+
+            document.write("<br> Message: "+ message);
+        }
+
+        greet();
+
+        if (true){
+            var hello = "World"
+        }
+
+        document.write("Message: "+ hello);
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>

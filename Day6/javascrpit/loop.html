@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    
+
+    <script>
+        // var i = 1;
+        // while(i<=10){
+        //     document.write(i + "<br>");
+        //     i++;
+        // }
+
+        var fruits = ["apple" , "banana" , "cherry"];
+        document.write("Array of fruits: "+ fruits + "<br>");
+        
+        for(let j=0 ; j<fruits.length ; j++){
+            document.write(fruits[j] + "<br>");
+        }
+
+        var obj = {
+            name:"Umar",
+            age:20
+        };
+
+        document.write(obj.age);
+
+
+
+        function contr(name , age){
+            this.Name = name,
+            this.Age = age
+        }
+
+        var count = new contr("Umar" , 23);
+
+        document.write("<br> Age: " + count.Age);
+
+        
+    </script>
+</body>
+</html>
