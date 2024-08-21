@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0; 
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .form {
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            background-color: aquamarine;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; 
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            width: 100%; 
+            /* border: none; */
+            outline: none;
+            box-sizing: border-box;
+        }
+
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #007BFF; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 1rem;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; 
+        }
+        input[type="text"]:hover, 
+        input[type="email"]:hover, 
+        input[type="password"]:hover{
+
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Register with Us</h2>
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required placeholder="Enter your Name">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter E-mail">
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="Enter Password">
+            
+            <label for="cnfm-password">Confirm Password</label>
+            <input type="password" name="cnfm-password" id="cnfm-password" required placeholder="Enter Password again">
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
