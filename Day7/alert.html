@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, prompt , confirm</title>
+</head>
+<body>
+
+    <h2>Alert , Prompt , Confirm</h2>
+
+    <button onclick="Alert()">Alert</button>
+    <button onclick="Confirm()">Confirm</button>
+    <button onclick="Age()">Prompt</button>
+
+
+
+    <script>
+        function Alert(){
+            alert("Hello , this is alert");
+            }
+        
+        function Confirm(){
+            var result = confirm("Do you want to continue?");
+
+            if(result){
+                alert("You have clicked yes");
+            }
+            else{
+                alert("Bye!");
+            }
+        }
+
+        function Age(){
+            var age = prompt("Enter your age!");
+            if (age<18){
+                alert("You are not eligible to watch Deadpool and Wolverine");
+            }
+            else{
+                alert("You can watch Deadpool and Wolverine");
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

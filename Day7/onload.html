@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLoad</title>
+</head>
+<body>
+    <h2>Onload, Onselect Events</h2>
+
+    <select name="Colors" id="select-color">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+    </select>
+
+    <p id="select"></p>
+
+    <script>
+        function onSelect() {
+            var select = document.getElementById("select-color");
+            var selected = select.options[select.selectedIndex].text;
+            document.getElementById("select").innerHTML = "Selected Color is: " + selected;
+        }
+
+        function onLoad() {
+            document.getElementById("select").innerHTML = "Select the Color";
+        }
+
+        window.addEventListener("load", onLoad);
+
+        var selectElement = document.getElementById("select-color");
+        selectElement.addEventListener("change", onSelect);
+    </script>
+</body>
+</html>

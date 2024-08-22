@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit</title>
+</head>
+<body>
+
+    <h2 id="text">Click the button</h2>
+    <button onclick="ChangeText()">Click</button>
+    <br>
+    <br>
+
+    <form id="myForm">
+        <label for="name">Name</label> <br>
+        <input type="text" id="name" name="name" required> <br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email"> <br> <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="para"></p>
+
+    <script>
+        function ChangeText() {
+            document.getElementById("text").innerText = "Button clicked";
+        }
+        
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            var para = document.getElementById("para");
+            para.innerHTML = "Name: " + name + "<br> Email: " + email;
+        });
+    </script>
+    
+</body>
+</html>
