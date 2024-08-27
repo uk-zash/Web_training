@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+</head>
+<style>
+    body{
+        padding: 12px 12px;
+    }
+    .links{
+        text-align: center;
+    }
+    .links ul {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+    }
+
+
+.table-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #add8e6; /* Light Blue */
+    color: #333;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tfoot td {
+    background-color: #e0e0e0; /* Light Gray */
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+
+    <nav>
+        <div class="top">
+        <h3 style="color: blue;">ABC Institute of Technology</h3>
+        <p>Excellence in Education and Research</p>
+    </div>
+
+    <hr style="color: blue; border: 1px solid;">
+
+    <div class="links">
+        <ul>
+            <li class="link">Home</li>
+            <li class="link">About Us</li>
+            <li class="link">Courses</li>
+            <li class="link">Contact</li>
+        </ul>
+    </div>
+    </nav>
+
+
+    
+
+    <div class="container">
+        <h2 style="color: blue;">Institute Information</h2>
+        <hr style="color: blue; border: 1px solid;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis nam expedita non tempore dolorem aspernatur assumenda ullam consequuntur! Facilis aperiam fuga eius veniam et fugiat sunt repellendus illum in quos dolorem aspernatur nulla beatae ullam architecto amet, molestiae culpa illo corrupti, eveniet nesciunt labore soluta ab. Possimus nulla ad quia omnis voluptas praesentium, dolorem, accusantium iste facere incidunt quibusdam assumenda nemo totam porro amet. Dolorem, hic! Soluta laudantium vero illo consequuntur autem, dolor voluptatem laboriosam. Quam explicabo assumenda quia, quaerat ipsam aperiam perferendis quis quidem velit hic natus totam officia consectetur deleniti quo veniam ut impedit eligendi laboriosam maxime!</p>
+    </div>
+
+    <div class="container">
+        <h2 style="color: blue;">Student Information</h2>
+        <hr style="color: blue; border: 1px solid;">
+
+        <div class="table-container">
+            <h2>STUDENT TABLE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>xyz</td>
+                        <td>AIML</td>
+                        <td>3</td>
+                        <td>8.7</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>abc</td>
+                        <td>IoT</td>
+                        <td>3</td>
+                        <td>9.2</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>def</td>
+                        <td>CSE</td>
+                        <td>3</td>
+                        <td>8.9</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">2024 ABC Institute of Technology All rights reserved</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
