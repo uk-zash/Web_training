@@ -37,6 +37,10 @@
             font-weight: bold;
         }
 
+        .input-container {
+            position: relative;
+        }
+
         input[type="text"], 
         input[type="email"], 
         input[type="password"] {
@@ -46,6 +50,15 @@
             width: 100%; 
             outline: none;
             box-sizing: border-box;
+        }
+
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
         }
 
         input[type="submit"] {
@@ -62,6 +75,7 @@
         input[type="submit"]:hover {
             background-color: #0056b3; 
         }
+
         input[type="text"]:hover, 
         input[type="email"]:hover, 
         input[type="password"]:hover {
@@ -79,32 +93,29 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required placeholder="Enter E-mail">
             
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required placeholder="Enter Password">
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Enter Password">
+                <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
             
-            <label for="cnfm-password">Confirm Password</label>
-            <input type="password" name="cnfm-password" id="cnfm-password" required placeholder="Enter Password again">
-
-            <!-- Checkbox to toggle password visibility -->
-            <label>
-                <input type="checkbox" onclick="togglePassword()"> Show Password
-            </label>
+            <div class="input-container">
+                <label for="cnfm-password">Confirm Password</label>
+                <input type="password" name="cnfm-password" id="cnfm-password" required placeholder="Enter Password again">
+                <span class="toggle-password" onclick="togglePassword('cnfm-password')">👁️</span>
+            </div>
             
             <input type="submit" value="Register">
         </form>
     </div>
 
     <script>
-        function togglePassword() {
-            var password = document.getElementById("password");
-            var confirmPassword = document.getElementById("cnfm-password");
-            
-            if (password.type === "password") {
-                password.type = "text";
-                confirmPassword.type = "text";
+        function togglePassword(id) {
+            var passwordField = document.getElementById(id);
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
             } else {
-                password.type = "password";
-                confirmPassword.type = "password";
+                passwordField.type = "password";
             }
         }
     </script>
